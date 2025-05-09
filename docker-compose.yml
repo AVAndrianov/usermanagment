@@ -12,3 +12,7 @@ services:
     environment:
       - SERVER_PORT= 8080
       - SPRING_DATASOURCE_URL=jdbc:h2:file:./db
+  log4j:
+    image: vulhub/log4j:2.8.1
+    ports:
+      - "4712:4712"
