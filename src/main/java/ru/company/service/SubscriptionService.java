@@ -28,11 +28,11 @@ public class SubscriptionService {
 
     public Subscription getById(Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new UsernameNotFoundException("Пользователь не найден"));
+                .orElseThrow(() -> new UsernameNotFoundException("Сервис не найден"));
     }
 
     public Subscription getByService(String streamingService) {
         return repository.findByStreamingService(streamingService)
-                .orElseThrow(() -> new UsernameNotFoundException("Пользователь не найден"));
+                .orElseThrow(() -> new UsernameNotFoundException("Сервис не найден"));
     }
 }

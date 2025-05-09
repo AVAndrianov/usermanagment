@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "Запрос на регистрацию")
+@Schema(description = "Обновление даных о пользователе")
 public class UpdateUserRequest {
 
     @Schema(description = "Имя пользователя", example = "Jon")

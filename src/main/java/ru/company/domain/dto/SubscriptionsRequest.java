@@ -11,10 +11,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "Запрос на регистрацию")
+@Schema(description = "Добавление сервиса")
 public class SubscriptionsRequest {
 
-    @Schema(description = "Пароль", example = "my_1secret1_password")
+    @Schema(description = "Сервис", example = "YouTube")
     @Size(max = 255, message = "Длина пароля должна быть не более 255 символов")
     private String service;
 }
